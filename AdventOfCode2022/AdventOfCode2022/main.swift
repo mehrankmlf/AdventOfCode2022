@@ -7,6 +7,6 @@
 
 import Foundation
 
-let day = Day01(input: "Day01_Input.txt")
-day.puzzeleOne()
+let day = Day02(input: "Day02_Input.txt")
+day.puzzleTwo()
 
