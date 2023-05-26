@@ -9,10 +9,7 @@ import Foundation
 
 struct Day01: Solution {
 
-    var input: String?
-    var fetchData: String {
-        return input?.contentsOrBlank() ?? ""
-    }
+    var input: String
     
     init(input: String) {
         self.input = input
@@ -24,8 +21,6 @@ struct Day01: Solution {
         var sum = 0
         
         let lines = self.fetchData
-            .trimmingCharacters(in: .whitespaces)
-            .split(separator: "\n", omittingEmptySubsequences: false)
         
         for entry in lines {
             if entry != "" {
@@ -40,7 +35,7 @@ struct Day01: Solution {
 }
 
 extension Day01: Puzzels {
-    func puzzeleOne() {
+    func puzzleOne() {
         let result = self.elfs().max() ?? 0
         print("Total: \(result)")
     }

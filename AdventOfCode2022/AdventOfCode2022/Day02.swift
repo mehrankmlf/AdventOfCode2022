@@ -9,24 +9,15 @@ import Foundation
 
 struct Day02: Solution {
     
-    var input: String?
-    var fetchData: String {
-        return input?.contentsOrBlank() ?? ""
-    }
-    
+    var input: String
+
     init(input: String) {
         self.input = input
-    }
-        
-    func trimmedInput() -> [String.SubSequence] {
-        return self.fetchData
-                .trimmingCharacters(in: .whitespaces)
-                .split(separator: "\n", omittingEmptySubsequences: false)
     }
 }
 
 extension Day02: Puzzels {
-    func puzzeleOne() {
+    func puzzleOne() {
         
         /*
          The Roles Should be like below
@@ -45,19 +36,17 @@ extension Day02: Puzzels {
          
          */
         
-        let input = self.trimmedInput()
+        let input = self.fetchData
         
         var totalScore = 0
         
         let results = ["A Y": 8, "A X": 4, "A Z": 3,
-                        "B Y": 5, "B X": 1, "B Z": 9,
-                        "C Y": 2, "C X": 7, "C Z": 6]
-
+                       "B Y": 5, "B X": 1, "B Z": 9,
+                       "C Y": 2, "C X": 7, "C Z": 6]
+        
         for match in input {
-            for result in results.keys {
-                if match == result {
-                    totalScore += results[result]!
-                }
+            for result in results.keys where match == result {
+                totalScore += results[result]!
             }
         }
         print(totalScore)
@@ -82,7 +71,7 @@ extension Day02: Puzzels {
          
          */
         
-        let input = self.trimmedInput()
+        let input = self.fetchData
         
         var totalScore = 0
         
@@ -91,10 +80,8 @@ extension Day02: Puzzels {
                        "C Y": 6, "C X": 2, "C Z": 7]
         
         for match in input {
-            for result in results.keys {
-                if match == result {
-                    totalScore += results[result]!
-                }
+            for result in results.keys where match == result {
+                totalScore += results[result]!
             }
         }
         print(totalScore)

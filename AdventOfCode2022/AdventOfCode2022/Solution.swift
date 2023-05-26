@@ -8,11 +8,20 @@
 import Foundation
 
 protocol Solution {
+    var input: String {get}
+    var fetchData: [String.SubSequence] {get}
     init(input: String)
-    var fetchData: String {get}
+}
+
+extension Solution {
+    var fetchData: [String.SubSequence] {
+        return input.contentsOrBlank()
+                .trimmingCharacters(in: .whitespaces)
+                .split(separator: "\n", omittingEmptySubsequences: false)
+    }
 }
 
 protocol Puzzels {
-    func puzzeleOne()
+    func puzzleOne()
     func puzzleTwo()
 }
