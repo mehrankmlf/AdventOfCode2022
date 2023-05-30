@@ -15,7 +15,7 @@ struct Day01: Solution {
         self.input = input
     }
     
-    func elfs() -> [Int] {
+   private func elfs() -> [Int] {
         
         var elfs = [Int]()
         var sum = 0

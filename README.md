@@ -7,7 +7,7 @@ In this repository you can find my solutions for the puzzles.
 
 - **Day 1:** Calorie Counting ██████████ 100%
 - **Day 2:** Rock Paper Scissors ██████████ 100%
-- **Day 3:**  ▒▒▒▒▒▒▒▒▒▒ 0%
+- **Day 3:** Rucksack Reorganization ██████████ 100%
 - **Day 4:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 5:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 6:**  ▒▒▒▒▒▒▒▒▒▒ 0%
