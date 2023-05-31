@@ -44,7 +44,7 @@ extension Day04: Puzzels {
     }
     
     func puzzleTwo() {
-        print("")
+        // Need to be implemented
     }
 }
 
