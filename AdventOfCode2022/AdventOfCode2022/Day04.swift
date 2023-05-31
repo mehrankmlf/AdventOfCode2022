@@ -28,7 +28,7 @@ extension Day04: Puzzels {
         for item in input {
             let elfs = item.components(separatedBy: ",")
             let splitElfs = elfs.map{ $0.split(separator: "-") }
-
+            
             let min1 = Int(splitElfs[0][0])!
             let max1 = Int(splitElfs[0][1])!
             
