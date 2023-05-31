@@ -27,14 +27,13 @@ extension Day04: Puzzels {
         
         for item in input {
             let elfs = item.components(separatedBy: ",")
-            let seperatedElfs = (elf1: elfs[0].split(separator: "-"),
-                                 elf2: elfs[1].split(separator: "-"))
+            let splitElfs = elfs.map{ $0.split(separator: "-") }
+
+            let min1 = Int(splitElfs[0][0])!
+            let max1 = Int(splitElfs[0][1])!
             
-            let min1 = Int(seperatedElfs.elf1[0])!
-            let max1 = Int(seperatedElfs.elf1[1])!
-            
-            let min2 = Int(seperatedElfs.elf2[0])!
-            let max2 = Int(seperatedElfs.elf2[1])!
+            let min2 = Int(splitElfs[1][0])!
+            let max2 = Int(splitElfs[1][1])!
             
             if isContained(left: min1..<max1, right: min2..<max2) ||
                 isContained(left: min2..<max2, right: min1..<max1) {
