@@ -21,4 +21,4 @@ import Foundation
 
 let day04 = Day04(input: "Day04_Input.txt")
 day04.puzzleOne()
-
+day04.puzzleTwo()

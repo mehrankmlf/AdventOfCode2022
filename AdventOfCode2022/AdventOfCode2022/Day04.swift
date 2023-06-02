@@ -15,8 +15,12 @@ struct Day04: Solution {
         self.input = input
     }
     
-    private func isContained(left: Range<Int>, right: Range<Int>) -> Bool {
+    private func isContainedPuzzleOne(left: Range<Int>, right: Range<Int>) -> Bool {
         return left.lowerBound <= right.lowerBound && right.upperBound <= left.upperBound
+    }
+    
+    private func isContainedPuzzleTwo(left: Range<Int>, right: Range<Int>) -> Bool {
+        return left.lowerBound <= right.upperBound && left.upperBound >= right.lowerBound
     }
 }
 
@@ -35,8 +39,8 @@ extension Day04: Puzzels {
             let min2 = Int(splitElfs[1][0])!
             let max2 = Int(splitElfs[1][1])!
             
-            if isContained(left: min1..<max1, right: min2..<max2) ||
-                isContained(left: min2..<max2, right: min1..<max1) {
+            if isContainedPuzzleOne(left: min1..<max1, right: min2..<max2) ||
+                isContainedPuzzleOne(left: min2..<max2, right: min1..<max1) {
                 sum += 1
             }
         }
@@ -44,7 +48,24 @@ extension Day04: Puzzels {
     }
     
     func puzzleTwo() {
-        // Need to be implemented
+        let input = self.fetchData.filter { $0 != "" }
+        var sum = 0
+        
+        for item in input {
+            let elfs = item.components(separatedBy: ",")
+            let splitElfs = elfs.map{ $0.split(separator: "-") }
+            
+            let min1 = Int(splitElfs[0][0])!
+            let max1 = Int(splitElfs[0][1])!
+            
+            let min2 = Int(splitElfs[1][0])!
+            let max2 = Int(splitElfs[1][1])!
+            
+            if isContainedPuzzleTwo(left: min1..<max1, right: min2..<max2) {
+                sum += 1
+            }
+        }
+        print(sum)
     }
 }
 
