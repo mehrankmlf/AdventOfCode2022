@@ -26,21 +26,17 @@ struct Day04: Solution {
 
 extension Day04: Puzzels {
     func puzzleOne() {
-        let input = self.fetchData.filter { $0 != "" }
+        let input = self.fetchData.filter { !$0.isEmpty }
         var sum = 0
         
         for item in input {
-            let elfs = item.components(separatedBy: ",")
-            let splitElfs = elfs.map{ $0.split(separator: "-") }
-            
-            let min1 = Int(splitElfs[0][0])!
-            let max1 = Int(splitElfs[0][1])!
-            
-            let min2 = Int(splitElfs[1][0])!
-            let max2 = Int(splitElfs[1][1])!
-            
-            if isContainedPuzzleOne(left: min1..<max1, right: min2..<max2) ||
-                isContainedPuzzleOne(left: min2..<max2, right: min1..<max1) {
+            let splitElfs = item.split(separator: ",").map { $0.split(separator: "-") }
+
+            let range1 = Int(splitElfs[0][0])!..<Int(splitElfs[0][1])!
+            let range2 = Int(splitElfs[1][0])!..<Int(splitElfs[1][1])!
+
+            if isContainedPuzzleOne(left: range1, right: range2) ||
+                isContainedPuzzleOne(left: range2, right: range1) {
                 sum += 1
             }
         }
@@ -48,20 +44,16 @@ extension Day04: Puzzels {
     }
     
     func puzzleTwo() {
-        let input = self.fetchData.filter { $0 != "" }
+        let input = self.fetchData.filter { !$0.isEmpty }
         var sum = 0
-        
+
         for item in input {
-            let elfs = item.components(separatedBy: ",")
-            let splitElfs = elfs.map{ $0.split(separator: "-") }
-            
-            let min1 = Int(splitElfs[0][0])!
-            let max1 = Int(splitElfs[0][1])!
-            
-            let min2 = Int(splitElfs[1][0])!
-            let max2 = Int(splitElfs[1][1])!
-            
-            if isContainedPuzzleTwo(left: min1..<max1, right: min2..<max2) {
+            let splitElfs = item.split(separator: ",").map { $0.split(separator: "-") }
+
+            let range1 = Int(splitElfs[0][0])!..<Int(splitElfs[0][1])!
+            let range2 = Int(splitElfs[1][0])!..<Int(splitElfs[1][1])!
+
+            if isContainedPuzzleTwo(left: range1, right: range2) {
                 sum += 1
             }
         }
