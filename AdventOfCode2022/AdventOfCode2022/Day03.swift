@@ -31,7 +31,7 @@ struct Day03: Solution {
 
 extension Day03: Puzzels {
     func puzzleOne() {
-        let input = self.fetchData.filter { $0 != "" }
+        let input = self.fetchData.filter { !$0.isEmpty }
         let roles = self.roles()
         var totalSum = 0
 
@@ -46,7 +46,7 @@ extension Day03: Puzzels {
     }
     
     func puzzleTwo() {
-        let input = self.fetchData.filter { $0 != "" }
+        let input = self.fetchData.filter { !$0.isEmpty }
         let roles = self.roles()
         var totalSum = 0
 

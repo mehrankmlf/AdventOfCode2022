@@ -37,7 +37,6 @@ extension Day02: Puzzels {
          */
         
         let input = self.fetchData
-        
         var totalScore = 0
         
         let results = ["A Y": 8, "A X": 4, "A Z": 3,
@@ -72,7 +71,6 @@ extension Day02: Puzzels {
          */
         
         let input = self.fetchData
-        
         var totalScore = 0
         
         let results = ["A Y": 4, "A X": 3, "A Z": 8,

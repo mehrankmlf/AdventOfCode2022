@@ -16,7 +16,6 @@ struct Day01: Solution {
     }
     
    private func elfs() -> [Int] {
-        
         var elfs = [Int]()
         var sum = 0
         
@@ -25,7 +24,7 @@ struct Day01: Solution {
         for entry in lines {
             if entry != "" {
                 sum += Int(entry)!
-            }else if entry == "" {
+            } else if entry == "" {
                 elfs.append(sum)
                 sum = 0
             }
