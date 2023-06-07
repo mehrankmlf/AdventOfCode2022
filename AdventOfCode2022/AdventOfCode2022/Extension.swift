@@ -19,6 +19,14 @@ public extension String {
     }
 }
 
+
+extension String {
+    var allNumbers: [Int] {
+        let numbersInString = self.components(separatedBy: .decimalDigits.inverted).filter { !$0.isEmpty }
+        return numbersInString.compactMap { Int($0) }
+    }
+}
+
 extension Array {
     func devided() -> ([Element], [Element]) {
         let half = count / 2 + count % 2
@@ -36,3 +44,4 @@ extension Array {
         }
     }
 }
+

@@ -14,6 +14,9 @@ protocol Solution {
 }
 
 extension Solution {
+    var fetchRawData: String {
+        return input.contentsOrBlank()
+    }
     var fetchData: [String.SubSequence] {
         return input.contentsOrBlank()
                 .trimmingCharacters(in: .whitespaces)
