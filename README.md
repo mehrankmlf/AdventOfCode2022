@@ -9,7 +9,7 @@ In this repository you can find my solutions for the puzzles.
 - **Day 2:** Rock Paper Scissors ██████████ 100%
 - **Day 3:** Rucksack Reorganization ██████████ 100%
 - **Day 4:** Camp Cleanup ██████████ 100%
-- **Day 5:**  ▒▒▒▒▒▒▒▒▒▒ 0%
+- **Day 5:** Supply Stacks ██████████ 100%
 - **Day 6:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 7:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 8:**  ▒▒▒▒▒▒▒▒▒▒ 0%
