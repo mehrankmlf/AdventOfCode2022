@@ -24,5 +24,5 @@ import Foundation
 //day04.puzzleTwo()
 
 let day05 = Day05(input: "Day05_Input.txt")
-day05.temp()
+day05.puzzleOne()
 
