@@ -1,7 +1,7 @@
 🎄 Advent of Code 2022 🎄
 
 Here are my solutions to the [Advent of Code 2022](https://adventofcode.com/2022) puzzles. The solutions are written in Swift.
-In this repository you can find my solutions for the puzzles.
+In this repository, you can find my solutions for the puzzles.
 
 **Challenges**
 
@@ -10,7 +10,7 @@ In this repository you can find my solutions for the puzzles.
 - **Day 3:** Rucksack Reorganization ██████████ 100%
 - **Day 4:** Camp Cleanup ██████████ 100%
 - **Day 5:** Supply Stacks ██████████ 100%
-- **Day 6:**  ▒▒▒▒▒▒▒▒▒▒ 0%
+- **Day 6:** Tuning Trouble ██████████ 100%
 - **Day 7:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 8:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 9:**  ▒▒▒▒▒▒▒▒▒▒ 0%
