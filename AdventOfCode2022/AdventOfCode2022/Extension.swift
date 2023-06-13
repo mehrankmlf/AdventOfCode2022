@@ -45,3 +45,20 @@ extension Array {
     }
 }
 
+extension Array {
+    func windows(ofSize size: Int) -> [[Element]] {
+        guard size > 0 else {
+            return []
+        }
+        
+        var windows: [[Element]] = []
+        let count = self.count
+        
+        for i in 0...(count - size) {
+            let window = Array(self[i..<(i + size)])
+            windows.append(window)
+        }
+        
+        return windows
+    }
+}
