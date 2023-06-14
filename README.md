@@ -11,7 +11,7 @@ In this repository, you can find my solutions for the puzzles.
 - **Day 4:** Camp Cleanup ██████████ 100%
 - **Day 5:** Supply Stacks ██████████ 100%
 - **Day 6:** Tuning Trouble ██████████ 100%
-- **Day 7:**  ▒▒▒▒▒▒▒▒▒▒ 0%
+- **Day 7:** No Space Left On Device ██████████ 100%
 - **Day 8:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 9:**  ▒▒▒▒▒▒▒▒▒▒ 0%
 - **Day 10:** ▒▒▒▒▒▒▒▒▒▒ 0%
