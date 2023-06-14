@@ -26,6 +26,10 @@ import Foundation
 //let day05 = Day05(input: "Day05_Input.txt")
 //day05.puzzleOne()
 
-let day06 = Day06(input: "Day06_Input.txt")
-day06.puzzleOne()
-day06.puzzleTwo()
+//let day06 = Day06(input: "Day06_Input.txt")
+//day06.puzzleOne()
+//day06.puzzleTwo()
+
+let day07 = Day07(input: "Day07_Input.txt")
+day07.puzzleOne()
+day07.puzzleTwo()
